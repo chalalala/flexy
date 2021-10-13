@@ -1,0 +1,39 @@
+name: "Lint PR"
+
+on:
+  pull_request_target:
+    types:
+      - master
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      # Please look up the latest version from
+      # https://github.com/amannn/action-semantic-pull-request/releases
+      - uses: amannn/action-semantic-pull-request@vX.X.X
+      with:
+          types: |
+            fix
+            feat
+            refactor
+            style
+            docs
+            test
+            chore
+            build
+            perf
+            release
+          scopes: |
+            core
+            ui
+          requireScope: false
+          subjectPattern: ^(?![A-Z]).+$
+          subjectPatternError: |
+            The subject "{subject}" found in the pull request title "{title}"
+            didn't match the configured pattern. Please ensure that the subject
+            doesn't start with an uppercase character.
+          wip: true
+          validateSingleCommit: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
