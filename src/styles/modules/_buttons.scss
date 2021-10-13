@@ -1,3 +1,5 @@
+@import '../cores/mq';
+
 button, a {
    cursor: pointer;
 }
@@ -15,6 +17,10 @@ button, a {
    color: white;
    font-family: var(--font-body);
    font-weight: 500;
-   font-size: 16px;
+   font-size: 15px;
    line-height: 21px;
+
+   @include mq(mobile) {
+      font-size: 16px;
+   }
 }

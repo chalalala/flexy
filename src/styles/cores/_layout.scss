@@ -1,0 +1,39 @@
+.page-wrapper {
+   max-width: 1400px;
+   margin-left: auto;
+   margin-right: auto;
+
+   @include mq($until: tablet) {
+      padding-left: 20px;
+      padding-right: 20px;
+   }
+   @include mq($until: wide) {
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+}
+
+.center {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.full-height {
+   height: 100vh;
+}
+
+// Grid layout
+.grid {
+   display: grid;
+}
+
+// Flex layout
+.flex {
+   display: flex;
+}
+.align-items-center {
+   align-items: center;
+}
+.justify-content-center {
+   justify-content: center;
+}
