@@ -1,14 +1,30 @@
+@import '../cores/mq.scss';
+
 .social-links {
    display: flex;
-   grid-gap: 40px;
+   grid-gap: 20px;
    position: fixed;
-   right: -90px;
+   right: -80px;
    top: 45%;
    transform: rotate(90deg) translateY(-50%);
    
+   @include mq(tablet) {
+      right: -90px;
+      grid-gap: 40px;
+   }
+
    a {
-      font-weight: 500;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 17px;
+      opacity: 0.8;
+
+      @include mq(tablet) {
+         font-size: 14px;
+         font-weight: 500;
+      }
+
+      &:hover {
+         opacity: 1;
+      }
    }
 }
