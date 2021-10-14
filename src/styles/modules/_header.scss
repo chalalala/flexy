@@ -1,3 +1,5 @@
+@import '../cores/mq';
+
 .header {
    position: fixed;
    top: 40px;
@@ -8,12 +10,22 @@
       color: white;
       text-decoration: none;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 19px;
+
+      @include mq(tablet) {
+         font-size: 16px;
+      }
    }
 }
 .header-inner {
    display: flex;
-   justify-content: flex-end;
-   grid-gap: 40px;
+   justify-content: center;
+   grid-gap: 15px 30px;
+   flex-wrap: wrap;
+  
+   @include mq(tablet) {
+      justify-content: flex-end;
+      grid-gap: 40px;   
+   }
 }
