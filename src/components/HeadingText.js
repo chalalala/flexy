@@ -3,9 +3,9 @@ import '../styles/modules/_heading.scss';
 
 export default function HeadingText(props) {
    return (
-      <div class="heading-wrapper">
-         <div class="heading__subtitle">{ props.subtitle}</div>
-         <div class="heading__title">{ props.title }</div>
+      <div className="heading-wrapper">
+         <div className="heading__subtitle">{ props.subtitle}</div>
+         <div className="heading__title">{ props.title }</div>
       </div>
    )
 }

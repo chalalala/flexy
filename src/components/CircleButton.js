@@ -4,9 +4,9 @@ import '../styles/modules/_buttons.scss';
 
 export default function CircleButton(props) {
    return (
-      <a href={props.href} class="flex align-items-center circle-btn">
+      <a href={props.href} className="flex align-items-center circle-btn">
          <img src={iconPlay} className="circle-btn__icon" alt="start-button" />
-         { props.buttonText ? <div class="circle-btn__text">{props.buttonText}</div> : null }
+         { props.buttonText ? <div className="circle-btn__text">{props.buttonText}</div> : null }
       </a>
    )
 }

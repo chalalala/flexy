@@ -11,7 +11,7 @@ export default function Homepage() {
          <div id="stars3"></div>
         
          <div class="page-wrapper homepage-wrapper">
-            <div class="homepage__contents">
+            <div class="homepage__contents animation-fade-in">
                <HeadingText subtitle="Tell me how you are feeling" title="Calm down with us. Throw away your troubles, double your joy." />
                <CircleButton buttonText="Start now" />
             </div>
