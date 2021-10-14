@@ -7,6 +7,7 @@ import {
 import Homepage from './pages/homepage';
 import Header from './components/Header';
 import SocialLinks from './components/SocialLinks';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route path="/"> <Homepage /> </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

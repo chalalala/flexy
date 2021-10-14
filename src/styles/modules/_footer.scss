@@ -1,0 +1,16 @@
+@import '../cores/mq.scss';
+
+.footer {
+   background: #242633;
+   color: white;
+   height: 52px;
+}
+.footer-inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100%;
+}
+.footer__copyright {
+   font-size: 12px;
+}
