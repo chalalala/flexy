@@ -3,13 +3,13 @@
    margin-left: auto;
    margin-right: auto;
 
-   @include mq($until: tablet) {
-      padding-left: 20px;
-      padding-right: 20px;
-   }
    @include mq($until: wide) {
       padding-left: 50px;
       padding-right: 50px;
+   }
+   @include mq($until: tablet) {
+      padding-left: 20px;
+      padding-right: 20px;
    }
 }
 
