@@ -1,0 +1,14 @@
+.social-links {
+   display: flex;
+   grid-gap: 40px;
+   position: fixed;
+   right: -90px;
+   top: 45%;
+   transform: rotate(90deg) translateY(-50%);
+   
+   a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+   }
+}
