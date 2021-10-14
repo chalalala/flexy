@@ -1,0 +1,14 @@
+.animation-fade-up {
+   animation: 2s fade-up both;
+}
+
+@keyframes fade-up {
+   from {
+      opacity: 0;
+      transform: translateY(20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

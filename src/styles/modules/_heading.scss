@@ -1,0 +1,33 @@
+@import '../cores/typography';
+@import '../cores/mq';
+
+.heading-wrapper {
+   max-width: 681px;
+}
+
+.heading__subtitle {
+   color: white;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 26px;
+   margin-bottom: 7px;
+   opacity: 0.8;
+
+   @include mq(tablet) {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 15px;
+   }
+}
+
+.heading__title {
+   font-family: var(--font-header);
+   font-weight: 900;
+   font-size: 22px;
+   line-height: 36px;
+
+   @include mq(tablet) {
+      font-size: 32px;
+      line-height: 45px;
+   }
+}
