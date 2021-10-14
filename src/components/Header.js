@@ -6,10 +6,10 @@ export default function Header() {
    return (
       <div class="header">
          <div class="page-wrapper header-inner">
-            <Link to="/">Home</Link>
-            <Link to="/">Features</Link>
-            <Link to="/">About us</Link>
-            <Link to="/">Contact</Link>
+            <Link className="header__link" to="/">Home</Link>
+            <Link className="header__link" to="/">Features</Link>
+            <Link className="header__link" to="/">About us</Link>
+            <Link className="primary-btn" to="/">Contact</Link>
          </div>
       </div>
    )

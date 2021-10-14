@@ -4,6 +4,10 @@ button, a {
    cursor: pointer;
 }
 
+a {
+   text-decoration: none;
+}
+
 // Circle button
 .circle-btn {
    grid-gap: 18px;
@@ -27,6 +31,24 @@ button, a {
    line-height: 21px;
 
    @include mq(mobile) {
+      font-size: 16px;
+   }
+}
+
+// Primary button
+.primary-btn {
+   background: #FFFFFF;
+   border-radius: 4px;
+   color: #606B74;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   padding: 7px 14px;
+   text-align: center;
+   font-size: 14px;
+   line-height: 19px;
+
+   @include mq(tablet) {
       font-size: 16px;
    }
 }
