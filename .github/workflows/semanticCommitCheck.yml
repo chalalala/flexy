@@ -1,8 +1,8 @@
 name: "Lint PR"
 
 on:
-  pull_request_target:
-    types:
+  pull_request:
+    branch:
       - master
 
 jobs:
