@@ -15,8 +15,8 @@ heading {
 ```
 
 2. Styles <br>
-* General styles such as typography, layout or breakpoints are placed in `styles/cores/` directory and are all included in `styles/styles.scss`.<br>
-* The styles for components and pages should be placed in the `styles/modules/` directory.
+* General styles such as typography, layout or breakpoints are placed in `styles/cores/` directory, for components, they are in `styles/components`and are all included in `styles/styles.scss`.<br>
+* Styles for pages should be placed in the `styles/modules/` directory.
 
 ## Breakpoints and responsive
 When you create responsive layout, use `@include mq(device)` to have a unified breakpoints.<br>
