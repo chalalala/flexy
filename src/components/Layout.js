@@ -6,10 +6,10 @@ import SocialLinks from './SocialLinks';
 export default function Layout(props) {
    return (
       <React.Fragment>
-         {props?.hiddenHeader ? null : <Header />}
+         {!props.hiddenHeader && <Header/>}
          <SocialLinks />
          {props.children}
-         {props?.hiddenFooter ? null : <Footer />}
+         {!props.hiddenFooter && <Footer />}
       </React.Fragment>
    )
 }
