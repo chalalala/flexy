@@ -1,0 +1,26 @@
+@import '../cores/mq';
+
+.featuresComponent-contents {
+  margin: auto;
+  flex-direction: column;
+  @include mq(desktop) {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 50px;
+ }
+ .heading-wrapper {
+    @include mq($until: desktop) {
+       margin-bottom: 30px;
+    }
+ }
+}
+.featuresComponent-circle-wrap {
+  width: fit-content;
+  margin: auto
+}
+.featuresComponent-buttonGroup{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 30px;
+   flex-wrap: wrap;
+}

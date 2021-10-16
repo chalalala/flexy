@@ -1,20 +1,27 @@
-import React from 'react';
-import CircleButton from '../components/CircleButton';
-import HeadingText from '../components/HeadingText';
+import React, { useState } from 'react';
+import EmotionSelections from '../components/FeaturesComponent.js/EmotionSelection';
+import InComingFeatures from '../components/FeaturesComponent.js/IncomingFeatures';
 import '../styles/modules/_features.scss';
+
 export default function Features() {
+  const [selectedEmotion, setSelectedEmotion] = useState({name: '', href: null});
+
+  const FeaturesStatus = () => {
+    const isSelectedEmotion = selectedEmotion?.name !== ''
+    if(!isSelectedEmotion){
+      return <EmotionSelections setSelectedEmotion={setSelectedEmotion}/>
+    } else  if(!selectedEmotion?.href){
+        return <InComingFeatures/>
+      }
+  }
+
   return (
     <div class="bg-galaxy full-height">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
       <div className="page-wrapper features-container">
-        <div className="features-contents  animation-fade-up">
-          <HeadingText subtitle="Stay tune" title="We will launch soon" textAlign="center" />
-          <div className="features-circle-wrap">
-            <CircleButton href="/aboutUs" buttonText="Take a tour" />
-          </div>
-        </div>
+        <FeaturesStatus/>
       </div>
     </div>
   );
