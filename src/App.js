@@ -8,8 +8,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/"> <Layout children={<Homepage />} /> </Route>
         <Route path="/features"> <Layout children={<Features />} /> </Route>
+        <Route path="/"> <Layout children={<Homepage />} /> </Route>
       </Switch>
     </Router>
   );
