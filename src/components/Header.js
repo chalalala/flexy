@@ -7,7 +7,7 @@ export default function Header() {
       <div class="header">
          <div class="page-wrapper header-inner">
             <Link className="header__link" to="/">Home</Link>
-            <Link className="header__link" to="/">Features</Link>
+            <Link className="header__link" to="/features">Features</Link>
             <Link className="header__link" to="/">About us</Link>
             <Link className="primary-btn" to="/">Contact</Link>
          </div>
