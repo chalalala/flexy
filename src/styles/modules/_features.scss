@@ -5,10 +5,10 @@
    align-items: center;
    flex-wrap: wrap;
    height: 100%;
-   flex-direction: column;
 }
 .features-contents {
    margin: auto;
+   flex-direction: column;
    @include mq(desktop) {
      display: flex;
      justify-content: space-between;
