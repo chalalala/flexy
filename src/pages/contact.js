@@ -13,7 +13,8 @@ export default function ContactUs() {
                <div>
                   <form class="contact-form">
                      <input class="contact__mail" name="contact[email]" type="email" placeholder="Email (optional)" />
-                     <textarea class="contact__message" rows="10" name="contact[message]" placeholder="Your message..." />
+                     <textarea class="contact__message" rows="10" name="contact[message]" placeholder="Your message..." required />
+                     <button class="primary-btn contact__submit" type="submit">Send</button>
                   </form>
                </div>
             </div>

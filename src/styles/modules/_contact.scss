@@ -15,11 +15,16 @@
 .contact__mail {
    margin-top: 26px;
    margin-bottom: 15px;
-
-   @include mq(tablet) {
-      margin-bottom: 23px;
-   }
 }
 .contact__message {
    resize: none;
+}
+.contact__submit {
+   padding: 7px 20px;
+   float: right;
+   margin-top: 10px;
+
+   @include mq($until: tablet) {
+      width: 100%;
+   }
 }
