@@ -1,4 +1,4 @@
-import { default as React, default as React, useState } from 'react';
+import { default as React, useState } from 'react';
 import EmotionSelections from '../components/FeaturesComponent.js/EmotionSelection';
 import InComingFeatures from '../components/FeaturesComponent.js/IncomingFeatures';
 import GalaxyBackground from '../components/GalaxyBackground';
