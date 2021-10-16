@@ -1,0 +1,25 @@
+@import '../cores/mq';
+
+.features-container {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   height: 100%;
+}
+.features-contents {
+   margin: auto;
+   @include mq(desktop) {
+     display: flex;
+     justify-content: space-between;
+     grid-gap: 50px;
+  }
+  .heading-wrapper {
+     @include mq($until: desktop) {
+        margin-bottom: 30px;
+     }
+  }
+}
+.features-circle-wrap {
+   width: fit-content;
+   margin: auto
+}
