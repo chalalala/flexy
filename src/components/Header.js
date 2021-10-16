@@ -9,7 +9,7 @@ export default function Header() {
             <Link className="header__link" to="/">Home</Link>
             <Link className="header__link" to="/features">Features</Link>
             <Link className="header__link" to="/">About us</Link>
-            <Link className="primary-btn" to="/">Contact</Link>
+            <Link className="primary-btn" to="/contact">Contact</Link>
          </div>
       </div>
    )
