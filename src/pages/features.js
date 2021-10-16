@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import { default as React, default as React, useState } from 'react';
 import EmotionSelections from '../components/FeaturesComponent.js/EmotionSelection';
 import InComingFeatures from '../components/FeaturesComponent.js/IncomingFeatures';
+import GalaxyBackground from '../components/GalaxyBackground';
+import Layout from '../components/Layout';
 import '../styles/modules/_features.scss';
 
 export default function Features() {
@@ -16,13 +18,12 @@ export default function Features() {
   }
 
   return (
-    <div class="bg-galaxy full-height">
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+    <Layout>
+      <GalaxyBackground>
       <div className="page-wrapper features-container">
         <FeaturesStatus/>
       </div>
-    </div>
+      </GalaxyBackground>
+    </Layout>
   );
 }

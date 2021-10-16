@@ -6,22 +6,14 @@ button, a {
 
 a {
    text-decoration: none;
+   color: inherit;
 }
 
 // Circle button
-.circle-btn {
-   grid-gap: 18px;
-   background: transparent;
-   border: none;
-}
 .circle-btn__icon {
-   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
    border-radius: 50%;
-
-   &:hover {
-      transition: box-shadow 1s ease-in;
-      box-shadow: inset 0 0 50px whitesmoke, inset 20px 0 50px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-   }
+   position: relative;
+   z-index: 1;
 }
 .circle-btn__text {
    color: white;
@@ -32,6 +24,34 @@ a {
 
    @include mq(mobile) {
       font-size: 16px;
+   }
+}
+.circle-btn {
+   grid-gap: 18px;
+   background: transparent;
+   border: none;
+   position: relative;
+
+   img {
+      width: 32px;
+      height: 32px;
+   }
+   &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);      
+      transition: .6s opacity ease-out;
+      opacity: 0;
+   }
+   &:hover::after {
+      box-shadow: inset 0 0 50px whitesmoke, inset 20px 0 50px #f0f, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+      opacity: 1;
    }
 }
 
