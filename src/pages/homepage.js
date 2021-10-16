@@ -5,7 +5,7 @@ import '../styles/modules/_homepage.scss';
 
 export default function Homepage() {
    return (
-      <div class="bg-galaxy full-height">
+      <div class="bg-galaxy full-height--w-footer">
          <div id="stars"></div>
          <div id="stars2"></div>
          <div id="stars3"></div>

@@ -4,20 +4,15 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Layout from './components/Layout';
 import Homepage from './pages/homepage';
-import Header from './components/Header';
-import SocialLinks from './components/SocialLinks';
-import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
-      <Header />
-      <SocialLinks />
       <Switch>
-        <Route path="/"> <Homepage /> </Route>
+        <Route path="/"> <Layout children={<Homepage />} /> </Route>
       </Switch>
-      <Footer />
     </Router>
   );
 }
