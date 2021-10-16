@@ -1,0 +1,22 @@
+@import '../cores/mq';
+
+input, textarea {
+   border-radius: 4px;
+   border: 2px solid #646D70;
+   box-sizing: border-box;
+   background-color: transparent;
+   color: white;
+   font-size: 14px;
+   font-family: inherit;
+   line-height: 17px;
+   padding: 7px;
+   opacity: 0.8;
+
+   @include mq(tablet) {
+      padding: 12px 15px;
+   }
+
+   &:focus {
+      outline: none;
+   }
+}
