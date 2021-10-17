@@ -21,10 +21,23 @@
 }
 .contact__submit {
    padding: 7px 20px;
+   width: 78px;
    float: right;
    margin-top: 10px;
 
    @include mq($until: tablet) {
       width: 100%;
    }
+}
+.contact__response {
+   margin-top: 10px;
+   margin-bottom: -10px;
+   padding: 2px 7px;
+   color: black;
+}
+.contact__response--success {
+   background-color: #BAE5EC;
+}
+.contact__response--error {
+   background-color: #F9D7D5;
 }

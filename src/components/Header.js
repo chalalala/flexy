@@ -4,8 +4,8 @@ import '../styles/modules/_header.scss';
 
 export default function Header() {
    return (
-      <div class="header">
-         <div class="page-wrapper header-inner">
+      <div className="header">
+         <div className="page-wrapper header-inner">
             <Link className="header__link" to="/">Home</Link>
             <Link className="header__link" to="/features">Features</Link>
             <Link className="header__link" to="/">About us</Link>
