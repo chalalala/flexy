@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/flexy/static/css/main.8cc8c3d3.chunk.css",
+    "main.css": "/flexy/static/css/main.919aadb5.chunk.css",
     "main.js": "/flexy/static/js/main.b1383820.chunk.js",
     "main.js.map": "/flexy/static/js/main.b1383820.chunk.js.map",
     "runtime-main.js": "/flexy/static/js/runtime-main.250e94f0.js",
@@ -10,14 +10,14 @@
     "static/js/3.6c3cac7b.chunk.js": "/flexy/static/js/3.6c3cac7b.chunk.js",
     "static/js/3.6c3cac7b.chunk.js.map": "/flexy/static/js/3.6c3cac7b.chunk.js.map",
     "index.html": "/flexy/index.html",
-    "static/css/main.8cc8c3d3.chunk.css.map": "/flexy/static/css/main.8cc8c3d3.chunk.css.map",
+    "static/css/main.919aadb5.chunk.css.map": "/flexy/static/css/main.919aadb5.chunk.css.map",
     "static/js/2.bd5af3d7.chunk.js.LICENSE.txt": "/flexy/static/js/2.bd5af3d7.chunk.js.LICENSE.txt",
     "static/media/icon-play-button.e9e96d2c.svg": "/flexy/static/media/icon-play-button.e9e96d2c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.250e94f0.js",
     "static/js/2.bd5af3d7.chunk.js",
-    "static/css/main.8cc8c3d3.chunk.css",
+    "static/css/main.919aadb5.chunk.css",
     "static/js/main.b1383820.chunk.js"
   ]
 }
