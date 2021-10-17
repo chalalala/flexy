@@ -1,0 +1,43 @@
+@import '../cores/mq';
+
+.contact-wrapper {
+   height: 100%;
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 120px;
+}
+.contact-form {
+   input, textarea {
+      width: 100%;
+   }
+}
+.contact__mail {
+   margin-top: 26px;
+   margin-bottom: 15px;
+}
+.contact__message {
+   resize: none;
+}
+.contact__submit {
+   padding: 7px 20px;
+   width: 78px;
+   float: right;
+   margin-top: 10px;
+
+   @include mq($until: tablet) {
+      width: 100%;
+   }
+}
+.contact__response {
+   margin-top: 10px;
+   margin-bottom: -10px;
+   padding: 2px 7px;
+   color: black;
+}
+.contact__response--success {
+   background-color: #BAE5EC;
+}
+.contact__response--error {
+   background-color: #F9D7D5;
+}
