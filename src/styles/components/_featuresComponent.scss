@@ -1,17 +1,17 @@
 @import '../cores/mq';
 
 .featuresComponent-contents {
-  margin: auto;
-  flex-direction: column;
-  @include mq(desktop) {
-    display: flex;
-    justify-content: space-between;
-    grid-gap: 50px;
- }
+   margin: auto;
+   @include mq(desktop) {
+      display: flex;
+      justify-content: space-between;
+      grid-gap: 50px;
+      flex-direction: column;
+   }
  .heading-wrapper {
-    @include mq($until: desktop) {
-       margin-bottom: 30px;
-    }
+   @include mq($until: desktop) {
+      margin-bottom: 30px;
+   }
  }
 }
 .featuresComponent-circle-wrap {
