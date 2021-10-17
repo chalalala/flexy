@@ -8,10 +8,7 @@ export default function Loader({ color="#fff", borderWidth="8px", size="80px" })
    
    return (
       <div class="lds-ring" style={{ width: size, height: size }}>
-         <div style={childLoaderStyles}></div>
-         <div style={childLoaderStyles}></div>
-         <div style={childLoaderStyles}></div>
-         <div style={childLoaderStyles}></div>
+         {[...Array(4)].map(() => <div style={childLoaderStyles} />)}
       </div>
    )
 }
