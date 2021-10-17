@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import Layout from '../components/Layout';
-import GalaxyBackground from '../components/GalaxyBackground';
 import HeadingText from '../components/HeadingText';
 import emailjs, { init } from 'emailjs-com';
 import '../styles/modules/_contact.scss';

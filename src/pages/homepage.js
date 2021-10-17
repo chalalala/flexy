@@ -1,5 +1,4 @@
 import React from 'react';
-import GalaxyBackground from '../components/GalaxyBackground';
 import HeadingText from '../components/HeadingText';
 import CircleButton from '../components/CircleButton';
 import Layout from '../components/Layout';
