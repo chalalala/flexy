@@ -4,11 +4,11 @@
    display: flex;
    align-items: center;
    flex-wrap: wrap;
+   width: 100%;
 }
 .homepage__contents {
    @include mq(desktop) {
       display: flex;
-      justify-content: space-between;
       grid-gap: 50px;
    }
    .heading-wrapper {
