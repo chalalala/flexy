@@ -46,21 +46,19 @@ export default function ContactUs() {
 
    return (
       <Layout>
-         <GalaxyBackground>
-            <div class="page-wrapper contact-wrapper">
-               <HeadingText subtitle="We are pleased to hear from you" title="Send us your message" />
-               <div>
-                  <form className="contact-form" onSubmit={(e) => onSubmit(e)}>
-                     { formStatus && <div className={`contact__response contact__response--${formStatus}`}>{ formResponse }</div>}
-                      <input className="contact__mail" name="contact[email]" type="email" placeholder="Email (optional)" ref={mailInput} />
-                     <textarea className="contact__message" rows="10" name="contact[message]" placeholder="Your message..." ref={messageInput} required />
-                     <button className="primary-btn contact__submit" type="submit">
-                        { loading ? <Loader color="#5A5F63" size="25px" borderWidth="4px" /> : "Send" }
-                     </button>
-                  </form>
-               </div>
+         <div class="page-wrapper contact-wrapper">
+            <HeadingText subtitle="We are pleased to hear from you" title="Send us your message" />
+            <div>
+               <form className="contact-form" onSubmit={(e) => onSubmit(e)}>
+                  { formStatus && <div className={`contact__response contact__response--${formStatus}`}>{ formResponse }</div>}
+                     <input className="contact__mail" name="contact[email]" type="email" placeholder="Email (optional)" ref={mailInput} />
+                  <textarea className="contact__message" rows="10" name="contact[message]" placeholder="Your message..." ref={messageInput} required />
+                  <button className="primary-btn contact__submit" type="submit">
+                     { loading ? <Loader color="#5A5F63" size="25px" borderWidth="4px" /> : "Send" }
+                  </button>
+               </form>
             </div>
-         </GalaxyBackground>
+         </div>
       </Layout>
    )
 }
