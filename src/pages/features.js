@@ -1,23 +1,28 @@
-import React from 'react';
-import CircleButton from '../components/CircleButton';
+import { default as React, useState } from 'react';
+import EmotionSelections from '../components/FeaturesComponent/EmotionSelection';
+import InComingFeatures from '../components/FeaturesComponent/IncomingFeatures';
 import GalaxyBackground from '../components/GalaxyBackground';
-import HeadingText from '../components/HeadingText';
 import Layout from '../components/Layout';
 import '../styles/modules/_features.scss';
 
 export default function Features() {
+  const defaultEmotion = { name: '', href: null };
+  const [selectedEmotion, setSelectedEmotion] = useState(defaultEmotion);
+
+  const FeaturesStatus = () => {
+    const isSelectedEmotion = selectedEmotion?.name !== '';
+    if (!isSelectedEmotion) {
+      return <EmotionSelections setSelectedEmotion={setSelectedEmotion} />;
+    } else if (!selectedEmotion?.href) {
+      return <InComingFeatures onReturnBack={() => setSelectedEmotion(defaultEmotion)} />;
+    }
+  };
+
   return (
     <Layout>
-      <GalaxyBackground>
-        <div className="page-wrapper features-container">
-          <div className="features-contents  animation-fade-up">
-            <HeadingText subtitle="Stay tune" title="We will launch soon" textAlign="center" />
-            <div className="features-circle-wrap">
-              <CircleButton href="/aboutUs" buttonText="Take a tour" />
-            </div>
-          </div>
-        </div>
-      </GalaxyBackground>
+      <div className="page-wrapper features-container">
+        <FeaturesStatus />
+      </div>
     </Layout>
   );
 }
