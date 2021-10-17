@@ -4,11 +4,7 @@ import { Button } from '@mui/material';
 
 export default function StyledButton({ text, handleChange }) {
   return (
-    <Button
-      variant="outlined"
-      classes={{ root: "styledButton-container" }}
-      onClick={handleChange}
-    >
+    <Button variant="outlined" classes={{ root: 'styledButton-container' }} onClick={handleChange}>
       {text}
     </Button>
   );

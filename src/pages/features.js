@@ -6,24 +6,24 @@ import Layout from '../components/Layout';
 import '../styles/modules/_features.scss';
 
 export default function Features() {
-  const defaultEmotion = {name: '', href: null}
+  const defaultEmotion = { name: '', href: null };
   const [selectedEmotion, setSelectedEmotion] = useState(defaultEmotion);
-  
+
   const FeaturesStatus = () => {
-    const isSelectedEmotion = selectedEmotion?.name !== ''
-    if(!isSelectedEmotion){
-      return <EmotionSelections setSelectedEmotion={setSelectedEmotion}/>
-    } else  if(!selectedEmotion?.href){
-        return <InComingFeatures onReturnBack={() => setSelectedEmotion(defaultEmotion)}/>
-      }
-  }
+    const isSelectedEmotion = selectedEmotion?.name !== '';
+    if (!isSelectedEmotion) {
+      return <EmotionSelections setSelectedEmotion={setSelectedEmotion} />;
+    } else if (!selectedEmotion?.href) {
+      return <InComingFeatures onReturnBack={() => setSelectedEmotion(defaultEmotion)} />;
+    }
+  };
 
   return (
     <Layout>
       <GalaxyBackground>
-      <div className="page-wrapper features-container">
-        <FeaturesStatus/>
-      </div>
+        <div className="page-wrapper features-container">
+          <FeaturesStatus />
+        </div>
       </GalaxyBackground>
     </Layout>
   );
