@@ -20,11 +20,9 @@ export default function Features() {
 
   return (
     <Layout>
-      <GalaxyBackground>
-        <div className="page-wrapper features-container">
-          <FeaturesStatus />
-        </div>
-      </GalaxyBackground>
+      <div className="page-wrapper features-container">
+        <FeaturesStatus />
+      </div>
     </Layout>
   );
 }

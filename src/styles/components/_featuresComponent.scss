@@ -21,8 +21,15 @@
 .featuresComponent-buttonGroup{
    display: flex;
    justify-content: flex-start;
-   margin-top: 30px;
+   margin-top: 50px;
+   grid-gap: 20px;
    flex-wrap: wrap;
+  @include mq(mobile){
+   grid-gap: 30px;
+  }
+  @include mq(tablet){
+   grid-gap: 70px;
+  }
 }
 .featuresComponent-returnBack{
    position: absolute;
