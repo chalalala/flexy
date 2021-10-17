@@ -8,11 +8,11 @@
       grid-gap: 50px;
       flex-direction: column;
    }
- .heading-wrapper {
-   @include mq($until: desktop) {
-      margin-bottom: 30px;
+   .heading-wrapper {
+      @include mq($until: desktop) {
+         margin-bottom: 30px;
+      }
    }
- }
 }
 .featuresComponent-circle-wrap {
   width: fit-content;
