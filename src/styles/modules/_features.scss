@@ -5,22 +5,10 @@
    align-items: center;
    flex-wrap: wrap;
    height: 100%;
-}
-.features-contents {
-   margin: auto;
-   flex-direction: column;
-   @include mq(desktop) {
-     display: flex;
-     justify-content: space-between;
-     grid-gap: 50px;
-  }
-  .heading-wrapper {
-     @include mq($until: desktop) {
-        margin-bottom: 30px;
-     }
-  }
-}
-.features-circle-wrap {
-   width: fit-content;
-   margin: auto
+   overflow: hidden;
+   margin-top: auto;
+   @include mq($until: tablet){
+      margin-top: 80px;
+      margin-bottom: 30px;
+   }
 }

@@ -21,7 +21,6 @@ a {
    font-weight: 500;
    font-size: 15px;
    line-height: 21px;
-
    @include mq(mobile) {
       font-size: 16px;
    }

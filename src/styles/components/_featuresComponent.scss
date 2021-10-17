@@ -1,0 +1,38 @@
+@import '../cores/mq';
+
+.featuresComponent-contents {
+   margin: auto;
+   @include mq(desktop) {
+      display: flex;
+      justify-content: space-between;
+      grid-gap: 50px;
+      flex-direction: column;
+   }
+   .heading-wrapper {
+      @include mq($until: desktop) {
+         margin-bottom: 30px;
+      }
+   }
+}
+.featuresComponent-circle-wrap {
+  width: fit-content;
+  margin: auto
+}
+.featuresComponent-buttonGroup{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 50px;
+   grid-gap: 20px;
+   flex-wrap: wrap;
+  @include mq(mobile){
+   grid-gap: 30px;
+  }
+  @include mq(tablet){
+   grid-gap: 70px;
+  }
+}
+.featuresComponent-returnBack{
+   position: absolute;
+   top: 40px;
+   cursor: pointer;
+}
