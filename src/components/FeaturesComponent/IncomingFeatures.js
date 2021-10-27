@@ -12,7 +12,7 @@ export default function InComingFeatures({ onReturnBack }) {
       <div className="featuresComponent-contents  animation-fade-up">
         <HeadingText subtitle="Stay tune" title="We will launch soon" textAlign="center" />
         <div className="featuresComponent-circle-wrap">
-          <CircleButton href="/aboutUs" buttonText="Take a tour" />
+          <CircleButton href="/about-us" buttonText="Take a tour" />
         </div>
       </div>
     </>
