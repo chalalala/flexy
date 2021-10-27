@@ -5,7 +5,7 @@
    max-width: 681px;
 }
 
-.heading__subtitle {
+.heading__subtitle, .heading__author {
    color: white;
    font-weight: 500;
    font-size: 15px;
@@ -19,7 +19,12 @@
       margin-bottom: 15px;
    }
 }
-
+.heading__author{
+   font-size: 18px;
+   line-height: 21px;
+   mix-blend-mode: normal;
+   margin-top: 5px;
+}
 .heading__title {
    font-family: var(--font-header);
    font-weight: 900;

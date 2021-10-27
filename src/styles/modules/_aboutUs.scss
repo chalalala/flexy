@@ -1,0 +1,24 @@
+@import '../cores/mq';
+
+.aboutUs-wrapper {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.aboutUs__contents {
+   margin: auto;
+   @include mq(desktop) {
+      display: flex;
+      grid-gap: 50px;
+   }
+   .heading-wrapper {
+      @include mq($until: desktop) {
+         margin-bottom: 30px;
+      }
+   }
+}
+.aboutUs__column {
+   @include mq(desktop) {
+      max-width: 40vw;
+   }
+}
